@@ -76,29 +76,29 @@ body {
         }
       }
 
-      // .rooms{
-      //   display: flex;
-      //   justify-content: space-around;
-      //   align-items: center;
+      .rooms{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
-      //   flex-wrap: wrap;
+        flex-wrap: wrap;
 
-      //   text-align: center;
+        text-align: center;
 
-      //   margin-top: 3%;
-      //   img{
-      //     width: 150px;
-      //   }
-      //   button{
-      //     margin: 1%;
+        margin-top: 3%;
+        img{
+          width: 150px;
+        }
+        button{
+          margin: 1%;
 
-      //     &:hover{
-      //       box-shadow: 0px 0px 8px $c2;
+          &:hover{
+            box-shadow: 0px 0px 8px $c2;
 
-      //       cursor: pointer;
-      //     }
-      //   }
-      // }
+            cursor: pointer;
+          }
+        }
+      }
 
       .RoomPlans{
 
@@ -192,10 +192,10 @@ body {
             -ms-transform: translate(-86%, -55%);
           }
           #mark5{
-            top: 30%;
+            top: 50%;
             left: 55%;
-            transform: translate(-30%, -55%);
-            -ms-transform: translate(-30%, -55%);
+            transform: translate(-50%, -55%);
+            -ms-transform: translate(-50%, -55%);
           }
         }
       }
