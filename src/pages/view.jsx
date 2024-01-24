@@ -54,7 +54,7 @@ const View = () => {
 
           <h1>Choose Room</h1>
 
-          <div className="rooms">
+          {/* <div className="rooms">
             <button
               onClick={function (event) {
                 setpano(Room1);
@@ -125,9 +125,9 @@ const View = () => {
               <img src={imgT6} alt="" />
               <p>Roof</p>
             </button>
-          </div>
+          </div> */}
 
-          {/* <div className="RoomPlans">
+          <div className="RoomPlans">
             <button className="ChooseFloor">
               <p>Ground Floor</p>
               <p>{">"}</p>
@@ -190,7 +190,7 @@ const View = () => {
                 <img src={mark} alt="Mark" />
               </button>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
 
