@@ -1,0 +1,395 @@
+//=======
+// color 
+//=======
+
+$c1 : rgb(31, 26, 23);
+$c2 : rgb(124, 110, 97);
+$c3 : white;
+
+// =======
+// FONTS 
+// =======
+
+$font1: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: $c1;
+
+  .hide{
+    display: none;
+  }
+  .show{
+    display: block;
+  }
+
+
+  .containRooms{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .chooseRoom{
+      color: $c3;
+      background: $c1;
+
+      width: 80%;
+
+      border-radius: 1%;
+      box-shadow: 0px 0px 8px $c2;
+
+      position: fixed;
+
+      z-index: 999;
+
+      text-align: center;
+
+      margin: 0 auto;
+
+      margin-top: 2%;
+
+      padding: 2%;
+      
+      font-family: $font1;
+      
+      top: 0;
+      bottom:0;
+      overflow-y:scroll;
+      overflow-x:hidden;
+      #back{
+        color: $c2;
+        background: $c1;
+
+        font-weight: lighter;
+        font-size: 15px;
+
+        text-decoration: underline;
+
+        border: 0;
+        &:hover{
+          cursor: pointer;
+
+          color: $c3;
+        }
+      }
+
+      // .rooms{
+      //   display: flex;
+      //   justify-content: space-around;
+      //   align-items: center;
+
+      //   flex-wrap: wrap;
+
+      //   text-align: center;
+
+      //   margin-top: 3%;
+      //   img{
+      //     width: 150px;
+      //   }
+      //   button{
+      //     margin: 1%;
+
+      //     &:hover{
+      //       box-shadow: 0px 0px 8px $c2;
+
+      //       cursor: pointer;
+      //     }
+      //   }
+      // }
+
+      .RoomPlans{
+
+        text-align: center;
+        .ChooseFloor{
+          color: $c3;
+          background: $c1;
+
+          font-size: 20px;
+
+          display: flex;
+          justify-content: space-around;
+
+          width: 100%;
+
+          border: 0;
+          border-radius: 15px;
+
+          box-shadow: 0px 4px 6px #555;
+
+          margin-top: 1%;
+          margin-bottom: 1%;
+        }
+        .plan{
+          position: relative;
+          width: 100%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img{
+            width: 40%;
+            height: auto;
+          }
+          button{
+            position: absolute;
+            
+            
+            background: rgba(0, 0, 0, 0);
+
+            padding: 1%;
+            padding-left: 0;
+            padding-right: 0;
+
+            border: 1px solid black;
+            border-radius: 15px;
+
+            width: 30px;
+            height: 50px;
+            &:hover{
+              background: $c1;
+
+              box-shadow: 0px 0px 8px #555;
+
+              cursor: pointer;
+            }
+
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          #mark1{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);              
+          }
+          #mark2{
+            top: 20%;
+            left: 50%;
+            transform: translate(-20%, -50%);
+            -ms-transform: translate(-20%, -50%);
+          }
+          #mark3{
+            top: 15%;
+            left: 50%;
+            transform: translate(-15%, -50%);
+            -ms-transform: translate(-15%, -50%);
+          }
+          #mark3{
+            top: 15%;
+            left: 50%;
+            transform: translate(-15%, -50%);
+            -ms-transform: translate(-15%, -50%);
+          }
+          #mark4{
+            top: 86%;
+            left: 55%;
+            transform: translate(-86%, -55%);
+            -ms-transform: translate(-86%, -55%);
+          }
+          #mark5{
+            top: 30%;
+            left: 55%;
+            transform: translate(-30%, -55%);
+            -ms-transform: translate(-30%, -55%);
+          }
+        }
+      }
+    }
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5%;
+
+    cursor: normal;
+    img {
+      width: 100px;
+    }
+
+    .txt {
+      color: $c2;
+      font-weight: lighter;
+
+      h2 {
+        font-weight: lighter;
+        font-family: $font1;
+      }
+    }
+  }
+
+  .projName {
+    color: $c2;
+
+    text-align: center;
+
+    margin: 2%;
+
+    font-family: $font1;
+
+    text-shadow: 0px 0px 8px $c2;
+    c {
+      font-size: 20px;
+
+      text-decoration: underline;
+    }
+    &:hover{
+      text-shadow: 0px 0px 8px #555;
+    }
+  }
+
+  .backLink{
+    font-family: $font1;
+    font-weight: lighter;
+    font-size: 20px;
+
+    text-align: center;
+
+    margin-top: 2%;
+
+    a{
+      color: $c2;
+    }
+  }
+
+  .btns {
+    text-align: center;
+
+    margin: 2%;
+    padding: 3%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .btn {
+      padding: 1%;
+
+      padding-right: 2%;
+      padding-left: 2%;
+
+      margin: 2%;
+
+      color: $c3;
+      background: $c1;
+
+      border: 1px solid white;
+
+      border-radius: 5px;
+
+      box-shadow: 0px 0px 6px $c2;
+
+      &:hover {
+        cursor: pointer;
+
+        background: $c3;
+
+        box-shadow: 0px 0px 16px $c2;
+
+        a {
+          color: $c1;
+
+          text-decoration: underline;
+        }
+      }
+
+      a {
+        color: $c3;
+
+        text-decoration: none;
+      }
+    }
+  }
+
+  #view{
+    display: flex;
+
+    justify-content: center;
+    iframe{
+      width: 80%;
+      height: 400px;
+
+      border-radius: 5px;
+
+      box-shadow: 0px 0px 6px $c2;
+    }
+  }
+
+  .hint{
+    color: $c2;
+    
+    font-size: 10px;
+    font-family: $font1;
+
+    text-align: center;
+    text-decoration: underline;
+
+    margin-top: 2%;
+  }
+
+  .btnsView{
+    text-align: center;
+    button{
+      background: $c1;
+      color: $c3;
+
+      border: 1px solid $c3;
+      border-radius: 6px;
+
+      padding: 1%;
+      padding-left: 5%;
+      padding-right: 5%;
+
+      margin: 2%;
+
+      font-family: $font1;
+      font-size: 30px;
+
+      box-shadow: 0px 0px 4px $c3;
+      &:hover{
+        color: $c1;
+        background: $c3;
+
+        text-decoration: underline;
+
+        box-shadow: 0px 0px 16px $c3;
+
+        cursor: pointer;
+      }
+    }
+  }
+
+  
+  a[href^="tel:"]:before {
+    content: "\260e";
+    margin-right: 10px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .btns{
+    .btn{
+      padding: 1%;
+
+      font-size: 30px;
+    }
+  }
+
+  .containRooms .chooseRoom .rooms .room{
+    img{
+      width: 125px;
+    }
+  }
+}
+
