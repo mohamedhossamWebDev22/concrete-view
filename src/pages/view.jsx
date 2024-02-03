@@ -33,7 +33,9 @@ const Room1 =
   base =
     "https://momento360.com/e/u/7d8a7db0bdfe46ca8a1cc877be9ebe78?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true",
   base2 =
-    "https://momento360.com/e/u/3195ef731f4e4d1399ea596275bb77b5?utm_campaign=embed&utm_source=other&heading=13.6&pitch=-3.1&field-of-view=75&size=medium&display-plan=true";
+    "https://momento360.com/e/u/3195ef731f4e4d1399ea596275bb77b5?utm_campaign=embed&utm_source=other&heading=13.6&pitch=-3.1&field-of-view=75&size=medium&display-plan=true",
+  garden = 
+    "https://momento360.com/e/u/d0b7e6b9515d49a88a80efb78c71bb17?utm_campaign=embed&utm_source=other&heading=351.9&pitch=2.67&field-of-view=75&size=medium&display-plan=true";
 
 const View = () => {
   const [img, setimg] = useState("");
@@ -150,6 +152,13 @@ const View = () => {
                   changeImg(Kitchen);
                 }}
                 id="mark2">
+                <img src={mark} alt="Mark" />
+              </button>
+                <button
+                onClick={function (event) {
+                  changeImg(garden);
+                }}
+                id="mark7">
                 <img src={mark} alt="Mark" />
               </button>
             </div>
