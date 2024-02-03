@@ -22,6 +22,8 @@ const Room1 =
     "https://momento360.com/e/u/02da83befec14bd5b405d4dba738195e?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true",
   Room2 =
     "https://momento360.com/e/u/53d60a01ed9f4d518321afa594115f52?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true",
+  Room3 = 
+    "https://momento360.com/e/u/035032361bd04fb8879ae54a39fbaed7?utm_campaign=embed&utm_source=other&heading=15.33&pitch=6.86&field-of-view=75&size=medium&display-plan=true",
   Kitchen =
     "https://momento360.com/e/u/6d05c20dc293412f93cd22242f68fdbe?utm_campaign=embed&utm_source=other&heading=2.7&pitch=-4.5&field-of-view=75&size=medium&display-plan=true",
   Rcpt =
@@ -171,6 +173,13 @@ const View = () => {
                   changeImg(Room1);
                 }}
                 id="mark4">
+                <img src={mark} alt="Mark" />
+              </button>
+              <button
+                onClick={function (event) {
+                  changeImg(Room3);
+                }}
+                id="mark6">
                 <img src={mark} alt="Mark" />
               </button>
             </div>
