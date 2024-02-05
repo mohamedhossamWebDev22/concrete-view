@@ -15,6 +15,7 @@ import imgT7 from "../assets/thum/7.jpg";
 import plan1 from "../assets/plans/1.jpeg";
 import plan2 from "../assets/plans/2.jpeg";
 import plan3 from "../assets/plans/3.jpeg";
+import plan4 from "../assets/plans/4.jpeg";
 
 import mark from "../assets/plans/marker.png";
 import Animator from "../components/animator";
@@ -36,7 +37,12 @@ const Room1 =
   base2 =
     "https://momento360.com/e/u/3195ef731f4e4d1399ea596275bb77b5?utm_campaign=embed&utm_source=other&heading=13.6&pitch=-3.1&field-of-view=75&size=medium&display-plan=true",
   garden =
-    "https://momento360.com/e/u/d0b7e6b9515d49a88a80efb78c71bb17?utm_campaign=embed&utm_source=other&heading=351.9&pitch=2.67&field-of-view=75&size=medium&display-plan=true";
+    "https://momento360.com/e/u/d0b7e6b9515d49a88a80efb78c71bb17?utm_campaign=embed&utm_source=other&heading=351.9&pitch=2.67&field-of-view=75&size=medium&display-plan=true",
+  roof1 = 
+    "https://momento360.com/e/u/ac04ef8de8424b5c80a7b0163456346b?utm_campaign=embed&utm_source=other&heading=22.2&pitch=-0.6&field-of-view=75&size=medium&display-plan=true",
+  roof2 = 
+    "https://momento360.com/e/u/20927e7483f141c4a46e1731998af1c7?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true";
+  
 
 const View = () => {
   const [img, setimg] = useState("");
@@ -212,6 +218,39 @@ const View = () => {
                     changeImg(base2);
                   }}
                   id="mark5"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
+              </div>
+
+              <button className="ChooseFloor">
+                <p>Roof</p>
+                <p>{">"}</p>
+              </button>
+
+              <div className="plan">
+                <img src={plan4} alt="plan image" />
+                <button
+                  onClick={function (event) {
+                    changeImg(roof);
+                  }}
+                  id="mark1"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
+                <button
+                  onClick={function (event) {
+                    changeImg(roof1);
+                  }}
+                  id="mark3"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
+                <button
+                  onClick={function (event) {
+                    changeImg(roof2);
+                  }}
+                  id="mark4"
                 >
                   <img src={mark} alt="Mark" />
                 </button>
