@@ -140,6 +140,9 @@ const View = () => {
           </div> */}
 
             <div className="RoomPlans">
+
+              {/* Ground Floor */}
+
               <button className="ChooseFloor">
                 <p>Ground Floor</p>
                 <p>{">"}</p>
@@ -163,15 +166,9 @@ const View = () => {
                 >
                   <img src={mark} alt="Mark" />
                 </button>
-                <button
-                  onClick={function (event) {
-                    changeImg(garden);
-                  }}
-                  id="mark7"
-                >
-                  <img src={mark} alt="Mark" />
-                </button>
               </div>
+
+              {/* First Floor  */}
 
               <button className="ChooseFloor">
                 <p>First Floor</p>
@@ -206,6 +203,8 @@ const View = () => {
                 </button>
               </div>
 
+              {/* Basement Floor */}
+
               <button className="ChooseFloor">
                 <p>Basement</p>
                 <p>{">"}</p>
@@ -221,7 +220,17 @@ const View = () => {
                 >
                   <img src={mark} alt="Mark" />
                 </button>
+                <button
+                  onClick={function (event) {
+                    changeImg(garden);
+                  }}
+                  id="mark7"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
               </div>
+
+              {/* Roof Plan */}
 
               <button className="ChooseFloor">
                 <p>Roof</p>
