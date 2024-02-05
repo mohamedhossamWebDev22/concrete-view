@@ -11,12 +11,15 @@ import './style.scss'
 
 import logo from "./assets/logo.png"
 
+import Animator from './components/animator';
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Animator>
       <div className="title">
         <img src={logo} alt="Logo" />
         <div className="txt">
@@ -40,8 +43,9 @@ function App() {
           <NavLink to="/about">About Us</NavLink>
         </button>
       </div>
+    </Animator>
     </>
   )
 }
 
-export default App
+export default App;

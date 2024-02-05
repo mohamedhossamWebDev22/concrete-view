@@ -1,10 +1,12 @@
 import React from "react";
 
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import Animator from "../components/animator";
 
 const About = () => {
   return (
     <>
+      <Animator>
       <h1 className="backLink">
         <NavLink to="/">Back</NavLink>
       </h1>
@@ -25,6 +27,7 @@ const About = () => {
           <a href="tel:+201010438834"> Phone</a>
         </button>
       </div>
+      </Animator>
     </>
   );
 };

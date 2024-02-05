@@ -17,12 +17,13 @@ import plan2 from "../assets/plans/2.jpeg";
 import plan3 from "../assets/plans/3.jpeg";
 
 import mark from "../assets/plans/marker.png";
+import Animator from "../components/animator";
 
 const Room1 =
     "https://momento360.com/e/u/02da83befec14bd5b405d4dba738195e?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true",
   Room2 =
     "https://momento360.com/e/u/53d60a01ed9f4d518321afa594115f52?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true",
-  Room3 = 
+  Room3 =
     "https://momento360.com/e/u/035032361bd04fb8879ae54a39fbaed7?utm_campaign=embed&utm_source=other&heading=15.33&pitch=6.86&field-of-view=75&size=medium&display-plan=true",
   Kitchen =
     "https://momento360.com/e/u/6d05c20dc293412f93cd22242f68fdbe?utm_campaign=embed&utm_source=other&heading=2.7&pitch=-4.5&field-of-view=75&size=medium&display-plan=true",
@@ -34,7 +35,7 @@ const Room1 =
     "https://momento360.com/e/u/7d8a7db0bdfe46ca8a1cc877be9ebe78?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true",
   base2 =
     "https://momento360.com/e/u/3195ef731f4e4d1399ea596275bb77b5?utm_campaign=embed&utm_source=other&heading=13.6&pitch=-3.1&field-of-view=75&size=medium&display-plan=true",
-  garden = 
+  garden =
     "https://momento360.com/e/u/d0b7e6b9515d49a88a80efb78c71bb17?utm_campaign=embed&utm_source=other&heading=351.9&pitch=2.67&field-of-view=75&size=medium&display-plan=true";
 
 const View = () => {
@@ -50,15 +51,16 @@ const View = () => {
 
   return (
     <>
-      <div className={"containRooms"}>
-        <div className={"chooseRoom " + hide}>
-          <button id="back" onClick={() => sethide("hide")}>
-            Back
-          </button>
+      <Animator>
+        <div className={"containRooms"}>
+          <div className={"chooseRoom " + hide}>
+            <button id="back" onClick={() => sethide("hide")}>
+              Back
+            </button>
 
-          <h1>Choose Room</h1>
+            <h1>Choose Room</h1>
 
-          {/* <div className="rooms">
+            {/* <div className="rooms">
             <button
               onClick={function (event) {
                 setpano(Room1);
@@ -131,100 +133,107 @@ const View = () => {
             </button>
           </div> */}
 
-          <div className="RoomPlans">
-            <button className="ChooseFloor">
-              <p>Ground Floor</p>
-              <p>{">"}</p>
-            </button>
+            <div className="RoomPlans">
+              <button className="ChooseFloor">
+                <p>Ground Floor</p>
+                <p>{">"}</p>
+              </button>
 
-            <div className="plan">
-              <img src={plan2} alt="plan image" />
-              <button
-                onClick={function (event) {
-                  changeImg(Rcpt);
-                }}
-                id="mark1"
-              >
-                <img src={mark} alt="Mark" />
-              </button>
-              <button
-                onClick={function (event) {
-                  changeImg(Kitchen);
-                }}
-                id="mark2">
-                <img src={mark} alt="Mark" />
-              </button>
+              <div className="plan">
+                <img src={plan2} alt="plan image" />
                 <button
-                onClick={function (event) {
-                  changeImg(garden);
-                }}
-                id="mark7">
-                <img src={mark} alt="Mark" />
-              </button>
-            </div>
+                  onClick={function (event) {
+                    changeImg(Rcpt);
+                  }}
+                  id="mark1"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
+                <button
+                  onClick={function (event) {
+                    changeImg(Kitchen);
+                  }}
+                  id="mark2"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
+                <button
+                  onClick={function (event) {
+                    changeImg(garden);
+                  }}
+                  id="mark7"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
+              </div>
 
-            <button className="ChooseFloor">
-              <p>First Floor</p>
-              <p>{">"}</p>
-            </button>
+              <button className="ChooseFloor">
+                <p>First Floor</p>
+                <p>{">"}</p>
+              </button>
 
-            <div className="plan">
-              <img src={plan1} alt="plan image" />
-              <button
-                onClick={function (event) {
-                  changeImg(Room2);
-                }}
-                id="mark3">
-                <img src={mark} alt="Mark" />
-              </button>
-              <button
-                onClick={function (event) {
-                  changeImg(Room1);
-                }}
-                id="mark4">
-                <img src={mark} alt="Mark" />
-              </button>
-              <button
-                onClick={function (event) {
-                  changeImg(Room3);
-                }}
-                id="mark6">
-                <img src={mark} alt="Mark" />
-              </button>
-            </div>
+              <div className="plan">
+                <img src={plan1} alt="plan image" />
+                <button
+                  onClick={function (event) {
+                    changeImg(Room2);
+                  }}
+                  id="mark3"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
+                <button
+                  onClick={function (event) {
+                    changeImg(Room1);
+                  }}
+                  id="mark4"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
+                <button
+                  onClick={function (event) {
+                    changeImg(Room3);
+                  }}
+                  id="mark6"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
+              </div>
 
-            <button className="ChooseFloor">
-              <p>Basement</p>
-              <p>{">"}</p>
-            </button>
-
-            <div className="plan">
-              <img src={plan3} alt="plan image" />
-              <button
-                onClick={function (event) {
-                  changeImg(base2);
-                }}
-                id="mark5">
-                <img src={mark} alt="Mark" />
+              <button className="ChooseFloor">
+                <p>Basement</p>
+                <p>{">"}</p>
               </button>
+
+              <div className="plan">
+                <img src={plan3} alt="plan image" />
+                <button
+                  onClick={function (event) {
+                    changeImg(base2);
+                  }}
+                  id="mark5"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <h1 className="backLink">
-        <NavLink to="/">Back</NavLink>
-      </h1>
+        <h1 className="backLink">
+          <NavLink to="/">Back</NavLink>
+        </h1>
 
-      <div className="btnsView">
-        <button onClick={() => sethide("show")}>Choose Room</button>
-      </div>
+        <div className="btnsView">
+          <button onClick={() => sethide("show")}>Choose Room</button>
+        </div>
 
-      <div id="view">
-        <iframe src={pano} frameborder="0" allowFullScreen></iframe>
-      </div>
+        <div id="view">
+          <iframe src={pano} frameborder="0" allowFullScreen></iframe>
+        </div>
 
-      <p className="hint">Wait 3:5 Seconds For Loading The Scene.</p>
+        <p className="hint">Wait 3:5 Seconds For Loading The Scene.</p>
+      </Animator>
     </>
   );
 };
