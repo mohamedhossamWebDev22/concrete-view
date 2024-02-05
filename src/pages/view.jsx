@@ -41,7 +41,11 @@ const Room1 =
   roof1 = 
     "https://momento360.com/e/u/ac04ef8de8424b5c80a7b0163456346b?utm_campaign=embed&utm_source=other&heading=22.2&pitch=-0.6&field-of-view=75&size=medium&display-plan=true",
   roof2 = 
-    "https://momento360.com/e/u/20927e7483f141c4a46e1731998af1c7?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true";
+    "https://momento360.com/e/u/20927e7483f141c4a46e1731998af1c7?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true",
+  masterBath = 
+    "https://momento360.com/e/u/a637c48a5f544db6b0ba2da60026930d?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true",
+  roofBath = 
+    "https://momento360.com/e/u/229690a749dd4103841e9f8795a0458d?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true";
   
 
 const View = () => {
@@ -201,6 +205,15 @@ const View = () => {
                 >
                   <img src={mark} alt="Mark" />
                 </button>
+
+                <button
+                  onClick={function (event) {
+                    changeImg(masterBath);
+                  }}
+                  id="mark8"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
               </div>
 
               {/* Basement Floor */}
@@ -260,6 +273,14 @@ const View = () => {
                     changeImg(roof2);
                   }}
                   id="mark4"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
+                <button
+                  onClick={function (event) {
+                    changeImg(roofBath);
+                  }}
+                  id="mark9"
                 >
                   <img src={mark} alt="Mark" />
                 </button>
