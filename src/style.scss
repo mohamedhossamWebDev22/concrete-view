@@ -221,7 +221,7 @@ body {
 
     margin-top: 5%;
 
-    cursor: normal;
+    cursor: default;
     img {
       width: 100px;
     }
@@ -230,6 +230,7 @@ body {
       color: $c2;
       font-weight: lighter;
 
+      cursor: default;
       h2 {
         font-weight: lighter;
         font-family: $font1;
