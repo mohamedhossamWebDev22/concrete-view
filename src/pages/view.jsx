@@ -27,7 +27,7 @@ const Room1 =
   Room3 =
     "https://momento360.com/e/u/035032361bd04fb8879ae54a39fbaed7?utm_campaign=embed&utm_source=other&heading=15.33&pitch=6.86&field-of-view=75&size=medium&display-plan=true",
   Kitchen =
-    "https://momento360.com/e/u/6d05c20dc293412f93cd22242f68fdbe?utm_campaign=embed&utm_source=other&heading=2.7&pitch=-4.5&field-of-view=75&size=medium&display-plan=true",
+    "https://momento360.com/e/u/935a78439fca4e6c85a1fa9bae2335b8?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true",
   Rcpt =
     "https://momento360.com/e/u/ac1fbd7b54324a189dea20819cfa5d11?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true",
   roof =
