@@ -45,7 +45,11 @@ const Room1 =
   masterBath = 
     "https://momento360.com/e/u/a637c48a5f544db6b0ba2da60026930d?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true",
   roofBath = 
-    "https://momento360.com/e/u/229690a749dd4103841e9f8795a0458d?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true";
+    "https://momento360.com/e/u/229690a749dd4103841e9f8795a0458d?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true",
+  guestBath =
+    "https://momento360.com/e/u/733c86e914544f968b18454a1ab4eb6d?utm_campaign=embed&utm_source=other&heading=-19.3&pitch=0&field-of-view=75&size=medium&display-plan=true",
+  commonBath = 
+    "https://momento360.com/e/u/fea7ec349c8e45db95b2c26c0acb7b60?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true";
   
 
 const View = () => {
@@ -167,6 +171,14 @@ const View = () => {
                     changeImg(Kitchen);
                   }}
                   id="mark2"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
+                <button
+                  onClick={function (event) {
+                    changeImg(guestBath);
+                  }}
+                  id="mark10"
                 >
                   <img src={mark} alt="Mark" />
                 </button>
