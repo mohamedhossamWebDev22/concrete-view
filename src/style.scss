@@ -59,6 +59,8 @@ body {
       bottom:0;
       overflow-y:scroll;
       overflow-x:hidden;
+
+      animation: fade-in .25s;
       #back{
         color: $c2;
         background: $c1;
@@ -394,8 +396,17 @@ body {
 }
 
 
+// animation 
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fade-out {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
 
-
+// responsive 
 @media screen and (max-width: 600px) {
   .btns{
     .btn{
