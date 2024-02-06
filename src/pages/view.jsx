@@ -226,6 +226,14 @@ const View = () => {
                 >
                   <img src={mark} alt="Mark" />
                 </button>
+                <button
+                  onClick={function (event) {
+                    changeImg(commonBath);
+                  }}
+                  id="mark11"
+                >
+                  <img src={mark} alt="Mark" />
+                </button>
               </div>
 
               {/* Basement Floor */}
