@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
@@ -62,12 +62,27 @@ const View = () => {
     setpano(img);
     sethide("hide");
   };
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.keyCode === 27) { // Check if escape key was pressed
+        // Your code to hide the div goes here
+        sethide("hide")
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, []);
 
   return (
     <>
       <Animator>
         <div className={"containRooms"}>
-          <div className={"chooseRoom " + hide}>
+          <div id="Cr" className={"chooseRoom " + hide}>
             <button id="back" onClick={() => sethide("hide")}>
               Back
             </button>
