@@ -51,7 +51,7 @@ const Room1 =
   commonBath = 
     "https://momento360.com/e/u/fea7ec349c8e45db95b2c26c0acb7b60?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true",
   BasementBath = 
-    "https://momento360.com/e/u/b70c37668d3845399f528e9918328d25?utm_campaign=embed&utm_source=other&heading=312.89&pitch=-2.06&field-of-view=75&size=medium&display-plan=true",
+    "https://momento360.com/e/u/b70c37668d3845399f528e9918328d25?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true",
   living = 
     "https://momento360.com/e/u/78d7e7c7b29a48ee97333dec45d11584?utm_campaign=embed&utm_source=other&heading=-3.7&pitch=6.5&field-of-view=75&size=medium&display-plan=true";
   
@@ -290,7 +290,7 @@ const View = () => {
                 </button>
                 <button
                   onClick={function (event) {
-                    changeImg(guestBath);
+                    changeImg(BasementBath);
                   }}
                   id="mark10"
                 >

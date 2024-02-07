@@ -13,18 +13,18 @@ const About = () => {
 
       <div className="btns">
         <button className="btn">
-          <a href="https://www.facebook.com/Concrete.Construction.interior?mibextid=eHce3h">FaceBook</a>
+          <a target="_blank" href="https://www.facebook.com/Concrete.Construction.interior?mibextid=eHce3h">FaceBook</a>
         </button>
         <button className="btn">
-          <a href="https://www.instagram.com/concrete.construction.interior/">
+          <a target="_blank" href="https://www.instagram.com/concrete.construction.interior/">
             Instagram
           </a>
         </button>
         <button className="btn">
-          <a href="https://www.concrete.com.co/">Our Website</a>
+          <a target="_blank" href="https://www.concrete.com.co/">Our Website</a>
         </button>
         <button className="btn">
-          <a href="tel:+201010438834"> Phone</a>
+          <a target="_blank" href="tel:+201010438834"> Phone</a>
         </button>
       </div>
       </Animator>
